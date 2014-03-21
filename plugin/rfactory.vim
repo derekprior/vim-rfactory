@@ -12,7 +12,7 @@ function! s:Rfactory()
   if len(factory)
     let factory_name = factory[1]
     let factory_trait = factory[2]
-    split spec/support/factories.rb
+    split spec/factories.rb
     call search('.*factory.' . factory_name)
     if factory_trait !=? ''
       call search('.*trait.' . factory_trait)
